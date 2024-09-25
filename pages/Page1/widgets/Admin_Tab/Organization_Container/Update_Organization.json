@@ -1,0 +1,53 @@
+{
+    "boxShadow": "{{GlobalVariables.boxshadow}}",
+    "mobileBottomRow": 6,
+    "widgetName": "Update_Organization",
+    "onClick": "{{GenericCrud.GenericUpdate('organisations_put','Organisation','Organisation Updated!','Organisation Name('+Organization_Name.text+') already exists!',['Organization_Name','Version_Control_RadioGroup','Org_Owner_Email_Input','Archive_Org_RadioGroup','Archived_Filter'],{\"organisation\":{\"name\":Organization_Name.text,\"updated_by\":appsmith.user.email.split('@')[0],\"is_archived\":Archive_Org_RadioGroup.selectedOptionValue,\"version_control_enabled\":Version_Control_RadioGroup.selectedOptionValue} }, Organization_Table.selectedRow._id)}}",
+    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+    "dynamicPropertyPathList": [
+        {"key": "boxShadow"},
+        {"key": "isDisabled"},
+        {"key": "onClick"}
+    ],
+    "displayName": "Icon button",
+    "iconSVG": "/static/media/icon.b08054586989b185a0801e9a34f8ad49.svg",
+    "searchTags": [
+        "click",
+        "submit"
+    ],
+    "topRow": 1,
+    "bottomRow": 5,
+    "tooltip": "Update Organization Info",
+    "parentRowSpace": 10,
+    "type": "ICON_BUTTON_WIDGET",
+    "hideCard": false,
+    "mobileRightColumn": 37,
+    "animateLoading": false,
+    "parentColumnSpace": 4.393890380859375,
+    "dynamicTriggerPathList": [{"key": "onClick"}],
+    "leftColumn": 56,
+    "dynamicBindingPathList": [
+        {"key": "buttonColor"},
+        {"key": "borderRadius"},
+        {"key": "boxShadow"},
+        {"key": "isDisabled"}
+    ],
+    "isDisabled": "{{GlobalVariables.genericDisable([Organization_Name,Org_Owner_Email_Input],Organization_Table,'Update')}}",
+    "key": "z07s8bfut0",
+    "isDeprecated": false,
+    "rightColumn": 59,
+    "iconName": "edit",
+    "widgetId": "qr33qorlm3",
+    "minWidth": 50,
+    "isVisible": true,
+    "version": 1,
+    "parentId": "dc53ed5jbj",
+    "tags": ["Buttons"],
+    "renderMode": "CANVAS",
+    "isLoading": false,
+    "mobileTopRow": 2,
+    "responsiveBehavior": "hug",
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "mobileLeftColumn": 33,
+    "buttonVariant": "SECONDARY"
+}

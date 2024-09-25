@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "Admin_Search",
+    "pageId": "Page1",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "is_archived",
+        "value": "Organization_Table.selectedRow?.is_archived || false"
+      },
+      {
+        "name": "trigger_is_archived",
+        "value": "false"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "Page1_Admin_Search",
+  "deleted": false,
+  "gitSyncId": "667d24a349a57560f8e2acfb_667d563549a57560f8e2aecf"
+}

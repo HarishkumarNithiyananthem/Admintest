@@ -1,0 +1,53 @@
+{
+    "boxShadow": "{{GlobalVariables.boxshadow}}",
+    "mobileBottomRow": 6,
+    "widgetName": "Roles_Question_Create",
+    "onClick": "{{Admin_Search.questions_create(Section_Name_Input.text, Question_Input.text, Help_Text_Input.text, Roles_Permissions_MultiTreeSel.selectedOptionValues);}}",
+    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+    "dynamicPropertyPathList": [
+        {"key": "boxShadow"},
+        {"key": "isDisabled"},
+        {"key": "onClick"}
+    ],
+    "displayName": "Icon button",
+    "iconSVG": "/static/media/icon.b08054586989b185a0801e9a34f8ad49.svg",
+    "searchTags": [
+        "click",
+        "submit"
+    ],
+    "topRow": 1,
+    "bottomRow": 5,
+    "tooltip": "Create New Roles Question",
+    "parentRowSpace": 10,
+    "type": "ICON_BUTTON_WIDGET",
+    "hideCard": false,
+    "mobileRightColumn": 37,
+    "animateLoading": false,
+    "parentColumnSpace": 4.393890380859375,
+    "dynamicTriggerPathList": [{"key": "onClick"}],
+    "leftColumn": 56,
+    "dynamicBindingPathList": [
+        {"key": "buttonColor"},
+        {"key": "borderRadius"},
+        {"key": "boxShadow"},
+        {"key": "isDisabled"}
+    ],
+    "isDisabled": "{{GlobalVariables.genericDisable([Section_Name_Input,Question_Input,Roles_Permissions_MultiTreeSel],Roles_Question_Table,'Create')}}",
+    "key": "z07s8bfut0",
+    "isDeprecated": false,
+    "rightColumn": 59,
+    "iconName": "plus",
+    "widgetId": "9hkpzb9zss",
+    "minWidth": 50,
+    "isVisible": true,
+    "version": 1,
+    "parentId": "n8anjpr1n2",
+    "tags": ["Buttons"],
+    "renderMode": "CANVAS",
+    "isLoading": false,
+    "mobileTopRow": 2,
+    "responsiveBehavior": "hug",
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "mobileLeftColumn": 33,
+    "buttonVariant": "SECONDARY"
+}

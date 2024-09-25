@@ -1,0 +1,71 @@
+{
+  "unpublishedPage": {
+    "name": "Page1",
+    "slug": "page1",
+    "customSlug": "",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 4896,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 660,
+          "containerStyle": "none",
+          "snapRows": 124,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 89,
+          "minHeight": 1292,
+          "dynamicTriggerPathList": [],
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Page1_Admin_Search.organisation_search",
+              "name": "Admin_Search.organisation_search",
+              "collectionId": "Page1_Admin_Search",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async (filter = null) => {\n  try {\n    let unset = {\n      \"created_by\": 1,\n      \"created_on\": 1,\n      \"id\": 1,\n      \"is_archived\": 1,\n      \"is_deleted\": 1,\n      \"last_updated\": 1,\n      \"name\": 1,\n      \"updated_by\": 1,\n      \"org_owner_email\": 1,\n      \"version_control_enabled\": 1\n    };\n    return await Server.get('organisations_search', filter == null ? {\n      \"is_archived\": false,\n      \"is_deleted\": false\n    } : filter, unset);\n  } catch (error) {\n    await GlobalVariables.delay_function('200');\n    await CatchError.catcherror(error, GenericSearch.data, GenericSearch.responseMeta.statusCode);\n  }\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Page1_Admin_Search.plateform_resource_search",
+              "name": "Admin_Search.plateform_resource_search",
+              "collectionId": "Page1_Admin_Search",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async (filter = null) => {\n  try {\n    let unset = {\n      \"available_permissions\": 1,\n      \"id\": 1,\n      \"name\": 1,\n      \"updated_by\": 1\n    };\n    return await Server.get('platform_resources_search', filter == null ? {} : filter, unset);\n  } catch (error) {\n    await GlobalVariables.delay_function('200');\n    await CatchError.catcherror(error, GenericSearch.data, GenericSearch.responseMeta.statusCode);\n  }\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "Page1",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": []
+  },
+  "deleted": false,
+  "gitSyncId": "665fec87f63b8735cc02c790_665fec87f63b8735cc02c792"
+}

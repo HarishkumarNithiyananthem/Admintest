@@ -1,0 +1,52 @@
+{
+    "boxShadow": "{{GlobalVariables.boxshadow}}",
+    "mobileBottomRow": 6,
+    "widgetName": "User_Update_Iconbutton",
+    "onClick": "",
+    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+    "dynamicPropertyPathList": [
+        {"key": "boxShadow"},
+        {"key": "isDisabled"}
+    ],
+    "displayName": "Icon button",
+    "iconSVG": "/static/media/icon.b08054586989b185a0801e9a34f8ad49.svg",
+    "searchTags": [
+        "click",
+        "submit"
+    ],
+    "topRow": 1,
+    "bottomRow": 5,
+    "tooltip": "This Feature is disabled",
+    "parentRowSpace": 10,
+    "type": "ICON_BUTTON_WIDGET",
+    "hideCard": false,
+    "mobileRightColumn": 37,
+    "animateLoading": false,
+    "parentColumnSpace": 4.393890380859375,
+    "dynamicTriggerPathList": [{"key": "onClick"}],
+    "leftColumn": 56,
+    "dynamicBindingPathList": [
+        {"key": "buttonColor"},
+        {"key": "borderRadius"},
+        {"key": "boxShadow"},
+        {"key": "isDisabled"}
+    ],
+    "isDisabled": "{{true//GlobalVariables.genericDisable([User_Organisation_Select,First_Name_Input,Last_Name_Input,User_Role_Name_Input,Password_Input],Users_Table,'Update')}}",
+    "key": "z07s8bfut0",
+    "isDeprecated": false,
+    "rightColumn": 59,
+    "iconName": "edit",
+    "widgetId": "0eqdsysub7",
+    "minWidth": 50,
+    "isVisible": true,
+    "version": 1,
+    "parentId": "cmn89efhr8",
+    "tags": ["Buttons"],
+    "renderMode": "CANVAS",
+    "isLoading": false,
+    "mobileTopRow": 2,
+    "responsiveBehavior": "hug",
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "mobileLeftColumn": 33,
+    "buttonVariant": "SECONDARY"
+}

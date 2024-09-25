@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "CatchError",
+    "pageId": "Page1",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Page1_CatchError",
+  "deleted": false,
+  "gitSyncId": "667d24a349a57560f8e2acfb_66828973b6cae861093a63c3"
+}

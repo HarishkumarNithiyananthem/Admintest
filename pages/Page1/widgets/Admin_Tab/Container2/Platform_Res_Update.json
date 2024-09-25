@@ -1,0 +1,53 @@
+{
+    "boxShadow": "{{GlobalVariables.boxshadow}}",
+    "mobileBottomRow": 6,
+    "widgetName": "Platform_Res_Update",
+    "onClick": "{{GenericCrud.GenericUpdate('platform_resources_put','Platform Resources','platform_resources Updated!','platform_resources Name('+Platform_Res_Name.text+') already exists!',['Platform_Res_Name','Platform_Permission_Select'],{\"platform_resources\":{\"name\":Platform_Res_Name.text,\"available_permissions\":Platform_Permission_Select.selectedOptionLabels,\"updated_by\":appsmith.user.email.split('@')[0]} }, Platform_Res_Table.selectedRow._id)}}",
+    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+    "dynamicPropertyPathList": [
+        {"key": "boxShadow"},
+        {"key": "isDisabled"},
+        {"key": "onClick"}
+    ],
+    "displayName": "Icon button",
+    "iconSVG": "/static/media/icon.b08054586989b185a0801e9a34f8ad49.svg",
+    "searchTags": [
+        "click",
+        "submit"
+    ],
+    "topRow": 1,
+    "bottomRow": 5,
+    "tooltip": "Update Plateform Resource Info",
+    "parentRowSpace": 10,
+    "type": "ICON_BUTTON_WIDGET",
+    "hideCard": false,
+    "mobileRightColumn": 37,
+    "animateLoading": false,
+    "parentColumnSpace": 4.393890380859375,
+    "dynamicTriggerPathList": [{"key": "onClick"}],
+    "leftColumn": 56,
+    "dynamicBindingPathList": [
+        {"key": "buttonColor"},
+        {"key": "borderRadius"},
+        {"key": "boxShadow"},
+        {"key": "isDisabled"}
+    ],
+    "isDisabled": "{{GlobalVariables.genericDisable([Platform_Res_Name,Platform_Permission_Select],Platform_Res_Table,'Update')}}",
+    "key": "z07s8bfut0",
+    "isDeprecated": false,
+    "rightColumn": 59,
+    "iconName": "edit",
+    "widgetId": "21uztwt5am",
+    "minWidth": 50,
+    "isVisible": true,
+    "version": 1,
+    "parentId": "fd4nwlpqob",
+    "tags": ["Buttons"],
+    "renderMode": "CANVAS",
+    "isLoading": false,
+    "mobileTopRow": 2,
+    "responsiveBehavior": "hug",
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "mobileLeftColumn": 33,
+    "buttonVariant": "SECONDARY"
+}
