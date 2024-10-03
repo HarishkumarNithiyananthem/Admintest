@@ -14,6 +14,10 @@
       {
         "name": "trigger_is_archived",
         "value": "false"
+      },
+      {
+        "name": "is_triggred",
+        "value": "true"
       }
     ],
     "userPermissions": []
