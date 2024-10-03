@@ -4,7 +4,7 @@
     "topRow": 21,
     "labelWidth": "37",
     "type": "RADIO_GROUP_WIDGET",
-    "defaultOptionValue": "{{Organization_Table.selectedRow?.version_control_enabled?.toString()||''}}",
+    "defaultOptionValue": "{{Organization_Table.selectedRow?.version_control_enabled?.toString()||Admin_Search_Testcase.inputs[2].toString()}}",
     "animateLoading": true,
     "leftColumn": 2,
     "dynamicBindingPathList": [

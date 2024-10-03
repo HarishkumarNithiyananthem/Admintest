@@ -2,7 +2,7 @@
     "boxShadow": "{{GlobalVariables.boxshadow}}",
     "mobileBottomRow": 6,
     "widgetName": "Organization_Create",
-    "onClick": "{{GenericCrud.GenericCreate('organisations_post','Organisation','Organisation Created!','Organisation Name('+Organization_Name.text+') already exists!',['Organization_Name','Version_Control_RadioGroup','Archived_Filter','Org_Owner_Email_Input'],{\"created_by\":appsmith.user.email.split('@')[0],\"name\":Organization_Name.text,\"updated_by\":appsmith.user.email.split('@')[0],\"org_owner_email\":Org_Owner_Email_Input.text,\"version_control_enabled\":Version_Control_RadioGroup.selectedOptionValue})}}",
+    "onClick": "{{GenericCrud.GenericCreate('organisations_post','Organisation','Organisation Created!','Organisation Name('+Organization_Name.text+') already exists!',['Organization_Name','Version_Control_RadioGroup','Archived_Filter','Org_Owner_Email_Input'],{\"created_by\":appsmith.user.email.split('@')[0],\"name\":Organization_Name.text,\"updated_by\":appsmith.user.email.split('@')[0],\"org_owner_email\":Org_Owner_Email_Input.text,\"version_control_enabled\":Version_Control_RadioGroup.selectedOptionValue});Admin_Search_Testcase.add_data_to_widget(['name','email','bool'])}}",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "dynamicPropertyPathList": [
         {"key": "boxShadow"},

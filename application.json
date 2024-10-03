@@ -15,7 +15,11 @@
   },
   "color": "#FFEFDB",
   "icon": "diamond",
-  "unpublishedCustomJSLibs": [],
+  "unpublishedCustomJSLibs": [
+    {
+      "uidString": "Chance_chance_https://cdn.jsdelivr.net/npm/chance@1.1.12/chance.min.js"
+    }
+  ],
   "publishedCustomJSLibs": [],
   "evaluationVersion": 2,
   "applicationVersion": 2,

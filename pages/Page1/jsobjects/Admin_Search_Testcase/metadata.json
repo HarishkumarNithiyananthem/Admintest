@@ -1,0 +1,28 @@
+{
+  "unpublishedCollection": {
+    "name": "Admin_Search_Testcase",
+    "pageId": "Page1",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "inputs",
+        "value": "[]"
+      },
+      {
+        "name": "test_increment",
+        "value": "0"
+      },
+      {
+        "name": "unique_list",
+        "value": "[]"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "Page1_Admin_Search_Testcase",
+  "deleted": false,
+  "gitSyncId": "66f43ed20c33c50f4d4faf73_66fe4230c03c3e27610c541e"
+}
