@@ -1,6 +1,7 @@
 export default {
 	is_archived:Organization_Table.selectedRow?.is_archived||false,
 	trigger_is_archived:false,
+	is_triggred:true,
 	organisation_search:async(filter=null)=>{
 		try
 			{
