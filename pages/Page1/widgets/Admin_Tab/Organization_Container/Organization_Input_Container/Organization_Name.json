@@ -68,6 +68,6 @@
     "mobileLeftColumn": 2,
     "maxDynamicHeight": 9000,
     "iconAlign": "left",
-    "defaultText": "{{Organization_Table.selectedRowIndex==-1? Admin_Search_Testcase.inputs[0]:Organization_Table.selectedRow.name}}",
+    "defaultText": "{{Organization_Table.selectedRowIndex==-1? '':Organization_Table.selectedRow.name}}",
     "minDynamicHeight": 4
 }

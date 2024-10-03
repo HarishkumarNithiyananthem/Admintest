@@ -69,6 +69,6 @@
     "maxDynamicHeight": 9000,
     "shouldAllowAutofill": true,
     "iconAlign": "left",
-    "defaultText": "{{Organization_Table.selectedRowIndex==-1? Admin_Search_Testcase.inputs[1]:Organization_Table.selectedRow?.org_owner_email||\"\"}}",
+    "defaultText": "{{Organization_Table.selectedRowIndex==-1? '':Organization_Table.selectedRow?.org_owner_email||\"\"}}",
     "minDynamicHeight": 4
 }
